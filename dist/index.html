@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D model load</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="importmap">
+        {
+            "imports" : {
+                "three" : "./build/three.module.js",
+                "three/examples/loaders/GLTFLoader" : "./jsm/loaders/GLTFLoader.js",
+                "three/examples/controls/OrbitControls" : "./jsm/controls/OrbitControls.js",
+                "three/examples/jsm/libs/lil-gui.module.min" : "/jsm/libs/lil-gui.module.min.js",
+                "three/examples/jsm/libs/meshopt_decoder.module" : "/jsm/libs/meshopt_decoder.module.js",
+                "three/examples/loaders/OBJLoader" : "./jsm/loaders/OBJLoader.js",
+                "three/examples/loaders/MTLLoader" : "./jsm/loaders/MTLLoader.js",
+                "three/examples/loaders/FBXLoader" : "./jsm/loaders/FBXLoader.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class = "progress-bar-container">
+        <label for="progress-bar" id="loading-label">
+            Import your 3D file here<br>
+            <button id="myButton" class="btn-animate__underline-from-center">Choose a file</button>
+            <input type="file" id="model-file-input" accept=".gltf, .glb, .bin, .jpg, .png, .obj, .fbx" style="display: none;">
+        </label>
+        <!-- <label for="progress-bar">Loading...</label> -->
+        <progress id="progress-bar" value="0" max="100" style="display: none;"></progress>
+    </div>
+    <!-- <div id="message">Please input your model</div> -->
+    <!-- <button id="myButton">Input 3D model</button>
+    <input type="file" id="model-file-input" accept=".gltf,.glb" style="display: none;"> -->
+    <canvas class="web-gl"></canvas>
+    
+
+    
+    <script type="module" src="./client.js"></script>
+</body>
+</html>
