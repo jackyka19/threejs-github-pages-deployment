@@ -1,13 +1,3 @@
-// import * as THREE from '/build/three.module.js';
-// import {GLTFLoader} from './jsm/loaders/GLTFLoader.js';
-// import {OrbitControls} from './jsm/controls/OrbitControls.js';
-// import {GUI} from './jsm/libs/lil-gui.module.min.js';
-// import Stats from './jsm/libs/stats.module.js';
-// import { MeshoptDecoder } from './jsm/libs/meshopt_decoder.module.js'; 
-// import {OBJLoader} from './jsm/loaders/OBJLoader.js';
-// import {MTLLoader} from './jsm/loaders/MTLLoader.js';
-// import {FBXLoader} from './jsm/loaders/FBXLoader.js';
-
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
