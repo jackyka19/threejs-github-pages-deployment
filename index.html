@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D model load</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- {
+        "imports" : {
+            "three" : "./build/three.module.js",
+            "three/examples/loaders/GLTFLoader" : "./jsm/loaders/GLTFLoader.js",
+            "three/examples/controls/OrbitControls" : "./jsm/controls/OrbitControls.js",
+            "three/examples/jsm/libs/lil-gui.module.min" : "/jsm/libs/lil-gui.module.min.js",
+            "three/examples/jsm/libs/meshopt_decoder.module" : "/jsm/libs/meshopt_decoder.module.js",
+            "three/examples/loaders/OBJLoader" : "./jsm/loaders/OBJLoader.js",
+            "three/examples/loaders/MTLLoader" : "./jsm/loaders/MTLLoader.js",
+            "three/examples/loaders/FBXLoader" : "./jsm/loaders/FBXLoader.js"
+        }
+    } -->
     <script type="importmap">
         {
             "imports" : {
-                "three" : "./build/three.module.js",
-                "three/examples/loaders/GLTFLoader" : "./jsm/loaders/GLTFLoader.js",
-                "three/examples/controls/OrbitControls" : "./jsm/controls/OrbitControls.js",
-                "three/examples/jsm/libs/lil-gui.module.min" : "/jsm/libs/lil-gui.module.min.js",
-                "three/examples/jsm/libs/meshopt_decoder.module" : "/jsm/libs/meshopt_decoder.module.js",
-                "three/examples/loaders/OBJLoader" : "./jsm/loaders/OBJLoader.js",
-                "three/examples/loaders/MTLLoader" : "./jsm/loaders/MTLLoader.js",
-                "three/examples/loaders/FBXLoader" : "./jsm/loaders/FBXLoader.js"
+                "three" : "https://unpkg.com/three@0.155.0/build/three.module.js",
+                "three/addons/" : "https://unpkg.com/three@0.155.0/examples/jsm/"
+
             }
         }
     </script>

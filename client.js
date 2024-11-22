@@ -1,12 +1,44 @@
-import * as THREE from '/build/three.module.js';
-import {GLTFLoader} from './jsm/loaders/GLTFLoader.js';
-import {OrbitControls} from './jsm/controls/OrbitControls.js';
-import {GUI} from './jsm/libs/lil-gui.module.min.js';
-import Stats from './jsm/libs/stats.module.js';
-import { MeshoptDecoder } from './jsm/libs/meshopt_decoder.module.js'; 
-import {OBJLoader} from './jsm/loaders/OBJLoader.js';
-import {MTLLoader} from './jsm/loaders/MTLLoader.js';
-import {FBXLoader} from './jsm/loaders/FBXLoader.js';
+// import * as THREE from '/build/three.module.js';
+// import {GLTFLoader} from './jsm/loaders/GLTFLoader.js';
+// import {OrbitControls} from './jsm/controls/OrbitControls.js';
+// import {GUI} from './jsm/libs/lil-gui.module.min.js';
+// import Stats from './jsm/libs/stats.module.js';
+// import { MeshoptDecoder } from './jsm/libs/meshopt_decoder.module.js'; 
+// import {OBJLoader} from './jsm/loaders/OBJLoader.js';
+// import {MTLLoader} from './jsm/loaders/MTLLoader.js';
+// import {FBXLoader} from './jsm/loaders/FBXLoader.js';
+
+
+// import * as THREE from 'three';
+// import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+// import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+// import {GUI} from 'three/examples/jsm/libs/lil-gui.module.min.js';
+// import Stats from 'three/examples/jsm/libs/stats.module.js';
+// import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js'; 
+// import {OBJLoader} from 'three/examples/jsm/loaders/OBJLoader.js';
+// import {MTLLoader} from 'three/examples/jsm/loaders/MTLLoader.js';
+// import {FBXLoader} from 'three/examples/jsm/loaders/FBXLoader.js';
+
+// import * as THREE from "https://unpkg.com/three@0.155.0/build/three.module.js";
+// import { GLTFLoader } from "https://unpkg.com/three@0.155.0/examples/jsm/loaders/GLTFLoader.js";
+// import { OrbitControls } from "https://unpkg.com/three@0.155.0/examples/jsm/controls/OrbitControls.js";
+// import { GUI } from "https://unpkg.com/three@0.155.0/examples/jsm/libs/lil-gui.module.min.js";
+// import Stats from "https://unpkg.com/three@0.155.0/examples/jsm/libs/stats.module.js";
+// import { MeshoptDecoder } from "https://unpkg.com/three@0.155.0/examples/jsm/libs/meshopt_decoder.module.js"; 
+// import { OBJLoader } from "https://unpkg.com/three@0.155.0/examples/jsm/loaders/OBJLoader.js";
+// import { MTLLoader } from "https://unpkg.com/three@0.155.0/examples/jsm/loaders/MTLLoader.js";
+// import { FBXLoader } from "https://unpkg.com/three@0.155.0/examples/jsm/loaders/FBXLoader.js";
+
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GUI } from "three/addons/libs/lil-gui.module.min.js";
+import Stats from "three/addons/libs/stats.module.js";
+import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js"; 
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import { MTLLoader } from "three/addons/loaders/MTLLoader.js";
+import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+
 
 
 let scene;
